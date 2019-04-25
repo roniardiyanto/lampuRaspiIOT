@@ -1,0 +1,23 @@
+extends layout
+
+block content
+    script(type='text/javascript' src='/javascripts/client.js')
+    div.container
+        div.row
+            div.col-xs-6.col-sm-5.col-md-5.col-lg-5
+                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="12").gpio-checkbox
+                div.pull-right 
+                    span LAMPU 1
+            div.col-xs-6.col-sm-5.col-md-5.col-lg-5
+                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="16").gpio-checkbox
+                div.pull-right 
+                    span LAMPU 2
+            div.col-xs-6.col-sm-5.col-md-5.col-lg-5
+                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="20").gpio-checkbox
+                div.pull-right 
+                    span LAMPU 3
+            div.col-xs-6.col-sm-5.col-md-5.col-lg-5
+                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="21").gpio-checkbox
+                div.pull-right 
+                    span LAMPU 4
+            
