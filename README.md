@@ -3,7 +3,7 @@ Simple Node.JS Webserver for controlling Raspberry Pi with Login Page for access
 
 
 
-![Raspberry Pi GPIO GUI](./screenshot.png)
+![lampuRaspiIOT](./cd.png)
 
 ## Settings
 
