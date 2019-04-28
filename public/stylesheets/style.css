@@ -66,3 +66,7 @@ div.row > div.pin span.pin.gpio {
 div.row > div.pin span.pin.i2c {
     border-color: yellow;
 }
+img {
+    width: 129px;
+    height: 123px;
+}

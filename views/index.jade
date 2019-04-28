@@ -1,23 +1,35 @@
 extends layout
 
 block content
-    script(type='text/javascript' src='/javascripts/client.js')
-    div.container
-        div.row
-            div.col-xs-6.col-sm-5.col-md-5.col-lg-5
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="12").gpio-checkbox
-                div.pull-right 
-                    span LAMPU 1
-            div.col-xs-6.col-sm-5.col-md-5.col-lg-5
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="16").gpio-checkbox
-                div.pull-right 
-                    span LAMPU 2
-            div.col-xs-6.col-sm-5.col-md-5.col-lg-5
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="20").gpio-checkbox
-                div.pull-right 
-                    span LAMPU 3
-            div.col-xs-6.col-sm-5.col-md-5.col-lg-5
-                input(data-toggle="toggle" data-onstyle="success" data-offstyle="danger" type="checkbox" data-gpio="21").gpio-checkbox
-                div.pull-right 
-                    span LAMPU 4
-            
+    div.text-center
+        p 
+            img(src="logo.png", alt="logo")
+        form(class="form-signin" method="POST" action="/users/login")
+            #error
+                if error
+                    p.text-danger Error!!!
+
+            - var h1Classes = ['h3', 'mb-3', 'font-weight-normal']
+            h1(class=h1Classes) Please Login To Use
+
+            //-input email
+            label( for="inputEmail" class="sr-only") Email address
+            input(type="text" name="username" id="inputEmail" class="form-control" placeholder="Username" required autofocus)
+
+            //-input password
+            label(for="inputPassword" class="sr-only") Password
+            input(type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required)
+
+            //-remember Checkbox
+            - var divClasses=['checkbox', 'mb-3'];
+            div(class=divClasses)
+                label
+                    input(type="checkbox" value="remember-me")
+                    span Remember me
+
+            //-signIn button
+            - var buttonClass=['btn', 'btn-lg', 'btn-primary', 'btn-block'];
+            button(class=buttonClass type="submit") Sign in
+
+            - var pClasses=['mt-5', 'mb-3', 'text-muted'];
+            p(class=pClasses) &copy; 2019 - SMK Negeri 8 Semarang
