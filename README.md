@@ -1,9 +1,7 @@
-# Raspberry-Pi-Simple-Web-GPIO-GUI
-Simple Node.JS Webserver for controlling GPIOs of the Raspberry Pi
+# LampuRaspiIOT
+Simple Node.JS Webserver for controlling Raspberry Pi with Login Page for access.
 
-Tutorial (english): https://tutorials-raspberrypi.com/setup-raspberry-pi-node-js-webserver-control-gpios/
 
-Tutorial (german): http://tutorials-raspberrypi.de/raspberry-pi-nodejs-webserver-installieren-gpios-steuern
 
 ![Raspberry Pi GPIO GUI](./screenshot.png)
 
@@ -14,3 +12,4 @@ The following environment variables are supported:
  - `PORT` - The port the webserver runs at. (default 80)
 
 ***The [dotenv](https://github.com/motdotla/dotenv) environment is supported.***
+credit (english): https://tutorials-raspberrypi.com/setup-raspberry-pi-node-js-webserver-control-gpios/
